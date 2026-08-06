@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="Tejas Shivaprasad" >
+    <meta name="description" content="Tejas Shivaprasad Personal Page" >
+    <meta name="author" content="Tejas Shivaprasad">
+
+    <title>Tejas Shivaprasad</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+</head>
+
+<body>
+    <div class="page">
+        <div class="nav" id="navContainer">
+            <div class="nav-left">
+                <img class="profile-picture" id="profPic" src="img/profile.jpg"/>
+                <nav>
+                    <a href="index.html">ABOUT</a><br>
+                    <a href="#projects">PROJECTS</a><br>
+                    <a href="#publications">PUBLICATIONS</a><br>
+                    <a href="Tejas_Resume.pdf">RESUME</a><br>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <button id="menu-btn" type="button">
+                 <div class="menu-icon"></div>
+                 <div class="menu-icon"></div>
+                 <div class="menu-icon"></div>
+             </button>
+         </div>
+       </div>
+       <a name="home"></a>
+        <div class="one-column">
+            <div class="home-section paddings">
+                <p>
+                    <h1 id="home-title">TEJAS <span id="text-primary">SHIVAPRASAD</span></h1>
+                    <span class="title-text"> BOSTON, MA &middot
+                    SHIVAPRASAD.T@NORTHEASTERN.EDU </span>
+                </p>
+                <p class="title-text">
+                    MS Computer Science Candidate <br>
+                    Khoury College of Computer Sciences<br>
+                    Northeastern University
+                </p>
+                <p>
+                    I build retrieval systems and agentic AI. Graduating May 2027 and looking for
+                    software engineering co-ops and 2027 new grad roles. Previously led a 30-intern
+                    AI team at Nuevera Infotech shipping a production NLP chatbot, and built an
+                    anomaly detection pipeline over 16 million network traffic records at VIAIT.
+                    If I ship it, I can defend every line of it.
+                </p>
+                <ul class="inline-list">
+                    <li>
+                     <a href="mailto:shivaprasad.t@northeastern.edu"><span class="fa fa-envelope-square" style="font-size:42px;"> </span></a>
+                 </li>
+                 <li>
+                     <a href="https://www.linkedin.com/in/tejas-shivaprasad-a216a427a/"><span class="fa fa-linkedin-square" style="font-size: 42px;"></span></a>
+                 </li>
+                 <li>
+                     <a href="https://github.com/TejaShiv"><span class="fa fa-github-square" style="font-size: 42px;"></span></a>
+                 </li>
+             </ul>
+         </div>
+
+         <div class="cover"></div>
+         <a name="projects"></a>
+
+         <div class="teaching paddings">
+            <h2> PROJECTS </h2>
+
+            <pre class="mobile-teaching">
+/* current build */
+agentic_test_repair {
+    detect failing tests;
+    localize the fault;
+    generate patch;  // LLM
+    rerun to verify;
+    retry within bounds;
+}
+
+/* no unverified output
+reaches the codebase */
+exit(0);
+            </pre>
+
+            <pre>
+/* current build */
+agentic_test_repair {
+    detect failing tests;
+    localize the fault;
+    generate candidate patch;   // LLM
+    rerun suite to verify;
+    retry within bounds;
+}
+
+/* no unverified output reaches the codebase */
+exit(0);
+            </pre>
+
+            <p> <span class="special"><a href="https://github.com/TejaShiv/patent-search-engine">Patent Search Engine</a></span> <br>
+            Hybrid search over 640 vehicle patents combining BM25 keyword scoring, semantic embeddings,
+            metadata filters, and two-phase cross-encoder re-ranking. Benchmarked end to end and found
+            that retrieval pool size, not re-ranking depth, is the real latency lever. <br>
+            Python &middot sentence-transformers &middot cross-encoder re-ranking </p>
+
+            <p> <span class="special">Agentic Test-Repair System</span> <br>
+            An autonomous agent that detects failing tests, localizes the fault, generates a candidate
+            patch, writes it to disk, and reruns the suite to verify the repair, with bounded retries
+            and validation gates. Evaluated on the QuixBugs benchmark, where near-perfect pass rates
+            exposed training-data contamination and pushed evaluation to a harder held-out suite. <br>
+            Python &middot Gemini API &middot pytest </p>
+
+            <p> <span class="special"><a href="https://github.com/TejaShiv/rest-country-platform">REST Country Data Platform</a></span> <br>
+            Full-stack platform with a React frontend and a Go REST API, deployed through a GitHub
+            Actions CI/CD pipeline to AWS App Runner with zero-downtime releases, Redis caching, and
+            Prometheus/Grafana monitoring. <br>
+            React &middot TypeScript &middot Go &middot Docker &middot AWS </p>
+
+            <p> <span class="special">Solar Mapper</span> <br>
+            Django app that maps US commercial sites on an interactive map and estimates solar potential
+            through the NREL PVWatts and Solar Resource APIs, built around a re-runnable pipeline with
+            explicit failure states so bad data surfaces instead of disappearing. <br>
+            Python &middot Django &middot Leaflet &middot NREL APIs </p>
+
+            <p> <span class="special">VIAIT Network Anomaly Detection</span> <br>
+            ML anomaly detection over 16 million network traffic records at 95%+ accuracy. Profiled the
+            pipeline with cProfile, found the bottleneck was file I/O rather than the model, and cut a
+            30 minute run to under 2 minutes with chunked reading. <br>
+            Python &middot Pandas &middot scikit-learn &middot CSE-CIC-IDS2018 </p>
+        </div>
+
+        <div class="no-padding"><hr></div>
+        <a name="publications"></a>
+
+        <div class="publications paddings">
+            <h2> PUBLICATIONS </h2>
+             <p> Tejas Shivaprasad, et al. <br>
+                <a href="https://ieeexplore.ieee.org">Enhancing Network Security through a Multi-layered Honeypot Architecture with Integrated Network Monitoring Tools</a> <br>
+            2024 11th International Conference on Computing for Sustainable Global Development (INDIACom), IEEE Xplore, 2024. First author. </p>
+        </div>
+
+
+        <footer class="no-padding">
+            <span>Tejas Shivaprasad ©2026 &middot Site design adapted from Iraklis Tsekourakis, terminal styling by Isaac and Rob</span>
+            <a href="#home" id="footer-link"><span class="fa fa-home" aria-hidden="true" style="font-size:20px;"></a>
+        </footer>
+    </div>
+</div>
+</body>
+
+
+</html>

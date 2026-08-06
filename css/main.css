@@ -1,0 +1,371 @@
+
+body {
+    font-family:'Open Sans',serif;
+    margin: 0px;
+    color:black;
+}
+
+a {
+    text-decoration: none;
+    color: #E5AD06;
+}
+
+nav a {
+    color:lightgrey;
+}
+
+a [href="index.hmtl"] {
+    color: #ffc107;
+    font-weight: bold;
+    margin: 0px;
+}
+
+h1, h2, h3, h4, .special{
+    font-family: 'Saira Extra Condensed',serif;
+    font-weight: 700;
+}
+
+.special {
+    font-size: 1.3em;
+}
+
+h1 {
+    margin: 0px;
+    font-size:5.5em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+.title-text {
+    font-size: 1.5em;
+}
+
+.profile-picture {
+    width: 160px;
+    border-radius: 50%;
+    border: 10px solid lightgrey;
+}
+
+
+
+footer {
+    background-color: lightgrey;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.nav {
+    position:fixed;
+    width: 270px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4d4d4d;
+}
+
+#menu-btn {
+    display: none;
+}
+
+nav {
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+nav a {
+    color: lightgrey;
+    display: block;
+    padding: 0px;
+}
+
+.one-column {
+    margin-left: 270px;
+    overflow-y: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.paddings {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.margin-left-offset {
+    margin-left: 270px;
+}
+
+.cover {
+    height: 50vh;
+    background-image:url("../img/cover.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.no-padding {
+    paddig:0px;
+}
+
+
+.home-section {
+    font-family: 'Saira Extra Condensed',serif;
+    font-weight: 700;
+    min-height: 100vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.teaching, .publications, .advising {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.home-section p {
+    display: flex;
+
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.yellow, a:hover span, a:hover {
+    color: #ffc107;
+    font-weight: bold;
+    margin: 0px;
+}
+
+
+a span {
+    color: #4d4d4d;
+}
+
+.inline-list li {
+    display: inline;
+    padding-right: 42px;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+
+#text-primary {
+    color: grey;
+}
+
+pre {
+    /* Thanks to Isaac and Rob */
+    background-color: #000;
+    color: #5e5;
+    padding: 8px;
+
+    /* Get those cool glowing screen vibe */
+    box-shadow: 0 0 10px #5e5 inset;
+    text-shadow: 0 0 2px #5e5;
+    font-size: 13px;
+    min-width: 460px;
+    max-width:680px;
+}
+
+footer a {
+    color: white;
+}
+
+.mobile-teaching {
+    display: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Tablet styling */
+
+@media only screen and (max-width: 1024px) {
+
+    .nav {
+        position:fixed;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: #4d4d4d;
+        transition: height 0.4s;
+        overflow-y: hidden;
+
+    }
+
+    .one-column {
+        padding-top: 60px;
+        margin-left: 0px;
+    }
+
+    .nav-expand {
+        height: 300px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .nav-left {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+
+    .profile-picture {
+        margin-top:4px;
+        display: flex;
+        width:50px;
+        border-radius: 50%;
+        border: 0px;
+        
+    }
+
+    #menu-btn {
+        display: flex;
+        margin-right: 10px;
+        margin-top: 10px;
+        flex-direction: column;
+        background-color: #4d4d4d;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        cursor: pointer;
+
+    }
+
+
+    .menu-icon {
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        margin: 3px 10px;
+    }
+
+
+    .margin-left-offset {
+        margin-left: 0px;
+    }
+
+    .paddings {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .cover {
+        background-size: cover;
+    }
+
+    .teaching, .publications {
+        display: block;
+        padding-top: 60px;
+    }
+
+    
+}
+
+
+
+
+
+/* Phone styling */
+
+@media only screen and (max-width: 640px) {
+
+    .cover {
+        background-attachment: initial;
+        height:300px;
+    }
+
+    h1 {
+        font-size:3.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.3em;
+    }
+
+    .title-text {
+        font-size: 1.3em;
+    }
+
+    .paddings {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .advising {
+        display: block;
+        padding-top: 60px;
+    }
+
+}
+
+/* Small Phone styling */
+
+@media only screen and (max-width: 500px) {
+
+   pre {
+    display: none;
+}
+
+h1 {
+        font-size:3em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+
+    .title-text {
+        font-size: 1.2em;
+    }
+
+    body{
+        font-size: 0.9em;
+    }
+
+.mobile-teaching {
+    display: flex;
+    min-width: 300px;
+    width: 300px;
+}
+
+}
+
+
