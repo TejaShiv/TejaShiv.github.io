@@ -438,3 +438,33 @@ h1 {
         mask-image: linear-gradient(to right, transparent 0%, black 34%, black 88%, transparent 100%);
     }
 }
+
+
+/* ---- publications section hugs its content instead of filling a viewport ---- */
+.publications {
+    min-height: 0;
+    justify-content: flex-start;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.publications h2 {
+    margin-bottom: 4px;
+}
+
+.publications p {
+    max-width: 62em;
+    line-height: 1.75;
+}
+
+.pub-meta {
+    font-size: 0.95em;
+    color: #5a5a5a;
+}
+
+@media only screen and (max-width: 1024px) {
+    .publications {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
