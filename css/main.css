@@ -416,17 +416,25 @@ h1 {
 }
 
 
-/* ---- page-wide dot-matrix wave (decorative background) ---- */
-#page-dots {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    pointer-events: none;
+/* ---- hero dot-matrix wave (decorative) ---- */
+.home-section {
+    position: relative;
 }
 
-body {
-    background-color: #faf8f4;
+#hero-dots {
+    display: none;
+}
+
+@media only screen and (min-width: 1100px) {
+    #hero-dots {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 38%;
+        height: 100%;
+        pointer-events: none;
+        -webkit-mask-image: linear-gradient(to right, transparent 0%, black 34%, black 88%, transparent 100%);
+        mask-image: linear-gradient(to right, transparent 0%, black 34%, black 88%, transparent 100%);
+    }
 }
