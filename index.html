@@ -18,6 +18,7 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/hero-anim.js" defer></script>
 
 </head>
 
@@ -44,8 +45,6 @@
        <a name="home"></a>
         <div class="one-column">
             <div class="home-section paddings">
-              <div class="hero-grid">
-                <div class="hero-left">
                 <p>
                     <h1 id="home-title">TEJAS <span id="text-primary">SHIVAPRASAD</span></h1>
                     <span class="title-text"> BOSTON, MA &middot
@@ -72,9 +71,16 @@
                      <a href="https://github.com/TejaShiv"><span class="fa fa-github-square" style="font-size: 42px;"></span></a>
                  </li>
              </ul>
-                </div>
+                <canvas id="hero-dots" aria-hidden="true"></canvas>
+         </div>
 
-                <aside class="hero-term" aria-label="Profile summary">
+         <div class="cover"></div>
+         <a name="projects"></a>
+
+         <div class="teaching paddings">
+            <h2> PROJECTS </h2>
+
+            <div class="term">
 <pre>
 <span class="tp">tejas@boston</span>:<span class="td">~</span>$ whoami
 
@@ -100,15 +106,7 @@
 
 <span class="tp">tejas@boston</span>:<span class="td">~</span>$ <span class="cur">&#9608;</span>
 </pre>
-                </aside>
-              </div>
-         </div>
-
-         <div class="cover"></div>
-         <a name="projects"></a>
-
-         <div class="teaching paddings">
-            <h2> PROJECTS </h2>
+            </div>
 
             <p> <span class="special"><a href="https://github.com/TejaShiv/patent-search-engine">Patent Search Engine</a></span> <br>
             Hybrid search over 640 vehicle patents combining BM25 keyword scoring, semantic embeddings,
