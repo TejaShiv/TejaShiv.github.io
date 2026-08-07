@@ -44,6 +44,8 @@
        <a name="home"></a>
         <div class="one-column">
             <div class="home-section paddings">
+              <div class="hero-grid">
+                <div class="hero-left">
                 <p>
                     <h1 id="home-title">TEJAS <span id="text-primary">SHIVAPRASAD</span></h1>
                     <span class="title-text"> BOSTON, MA &middot
@@ -70,6 +72,36 @@
                      <a href="https://github.com/TejaShiv"><span class="fa fa-github-square" style="font-size: 42px;"></span></a>
                  </li>
              </ul>
+                </div>
+
+                <aside class="hero-term" aria-label="Profile summary">
+<pre>
+<span class="tp">tejas@boston</span>:<span class="td">~</span>$ whoami
+
+  ms computer science, northeastern
+  graduating may 2027
+
+<span class="tp">tejas@boston</span>:<span class="td">~</span>$ cat focus.txt
+
+  retrieval systems
+  agentic ai
+  full-stack engineering
+
+<span class="tp">tejas@boston</span>:<span class="td">~</span>$ ls stack/
+
+  python    go        typescript
+  react     docker    aws
+  pandas    redis     postgres
+
+<span class="tp">tejas@boston</span>:<span class="td">~</span>$ status
+
+  open to   co-op and new grad 2027
+  based in  boston, ma
+
+<span class="tp">tejas@boston</span>:<span class="td">~</span>$ <span class="cur">&#9608;</span>
+</pre>
+                </aside>
+              </div>
          </div>
 
          <div class="cover"></div>
@@ -77,40 +109,6 @@
 
          <div class="teaching paddings">
             <h2> PROJECTS </h2>
-
-            <pre class="mobile-teaching">
-/* current build */
-agentic_test_repair {
-    detect failing tests;
-    localize the fault;
-    generate patch;  // LLM
-    rerun to verify;
-    retry within bounds;
-}
-
-/* no unverified output
-reaches the codebase */
-
-/* Thanks to Isaac and Rob
-for the terminal styling. */
-exit(0);
-            </pre>
-
-            <pre>
-/* current build */
-agentic_test_repair {
-    detect failing tests;
-    localize the fault;
-    generate candidate patch;   // LLM
-    rerun suite to verify;
-    retry within bounds;
-}
-
-/* no unverified output reaches the codebase */
-
-/* Thanks to Isaac and Rob for the terminal styling. */
-exit(0);
-            </pre>
 
             <p> <span class="special"><a href="https://github.com/TejaShiv/patent-search-engine">Patent Search Engine</a></span> <br>
             Hybrid search over 640 vehicle patents combining BM25 keyword scoring, semantic embeddings,
@@ -131,13 +129,13 @@ exit(0);
             Prometheus/Grafana monitoring. <br>
             React &middot TypeScript &middot Go &middot Docker &middot AWS </p>
 
-            <p> <span class="special">Solar Mapper</span> <br>
+            <p> <span class="special"><a href="https://github.com/TejaShiv/solar-mapper">Solar Mapper</a></span> <br>
             Django app that maps US commercial sites on an interactive map and estimates solar potential
             through the NREL PVWatts and Solar Resource APIs, built around a re-runnable pipeline with
             explicit failure states so bad data surfaces instead of disappearing. <br>
             Python &middot Django &middot Leaflet &middot NREL APIs </p>
 
-            <p> <span class="special">VIAIT Network Anomaly Detection</span> <br>
+            <p> <span class="special"><a href="https://github.com/TejaShiv/Network-Analysis-and-Visualization">VIAIT Network Anomaly Detection</a></span> <br>
             ML anomaly detection over 16 million network traffic records at 95%+ accuracy. Profiled the
             pipeline with cProfile, found the bottleneck was file I/O rather than the model, and cut a
             30 minute run to under 2 minutes with chunked reading. <br>
