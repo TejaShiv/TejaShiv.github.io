@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 52" role="img" aria-label="LearnTej">
+  <rect width="190" height="52" rx="4" fill="#15151a"/>
+  <text x="12" y="37" font-family="ui-sans-serif, system-ui, -apple-system, sans-serif"
+        font-size="34" font-weight="600" letter-spacing="-1" fill="#f7f6f2">Learn<tspan fill="#14A3C7">Tej</tspan></text>
+</svg>

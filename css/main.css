@@ -7,7 +7,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #E5AD06;
+    color: #14A3C7;
 }
 
 nav a {
@@ -467,4 +467,41 @@ h1 {
         padding-top: 50px;
         padding-bottom: 50px;
     }
+}
+
+
+/* ---- shared palette with LearnTej ---------------------------------- */
+
+html { scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body { background-color: #e9e7e1; }
+
+a:focus-visible, button:focus-visible {
+  outline: 2px solid #14A3C7;
+  outline-offset: 3px;
+}
+
+/* ---- Learn AI nav button ------------------------------------------- */
+
+nav a.learn-btn {
+  display: inline-block;
+  margin: 6px 0 10px;
+  padding: 7px 20px;
+  border-radius: 3px;
+  background: #3f3f45;
+  color: #14A3C7;
+  font-family: 'Newsreader', Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 1.12em;
+  letter-spacing: 0.01em;
+  transition: background 0.18s ease, color 0.18s ease;
+}
+
+nav a.learn-btn:hover {
+  background: #14A3C7;
+  color: #15151a;
 }
