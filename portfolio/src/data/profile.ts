@@ -142,7 +142,7 @@ export const WORK: WorkCard[] = [
     category: 'Content Recovery / Static Site',
     repo: 'https://tejashiv.github.io/learntej',
     description:
-      'A workshop published a 25,000 word generative AI curriculum as a web portal, then took it down. The site had been archived hours before deletion, but the content was not in HTML files. It had been compiled into a JavaScript bundle, and three extraction attempts failed before one worked, because the whole curriculum turned out to be a single markdown document embedded as a template literal that earlier string filtering had rejected for being too punctuation heavy. Written permission was secured from the publisher, the portal was rebranded and rebuilt as a static site, and dated material such as model pricing and benchmark tables was removed rather than republished because it was already stale.',
+      'A workshop published a 25,000 word generative AI curriculum, then took it down. The site had been archived hours before deletion. It had been compiled into a JavaScript bundle, and three extraction attempts failed before one worked, because the whole curriculum turned out to be a single markdown document embedded as a template literal that earlier string filtering had rejected for being too punctuation heavy. Written permission was secured from the publisher, the portal was rebranded and rebuilt as a static site, and dated material such as model pricing and benchmark tables was removed rather than republished because it was already stale.',
     stats: ['25,000 words recovered', 'Extracted from a JS bundle', 'Permission secured in writing'],
     tags: ['JavaScript', 'Static Site', 'GitHub Pages', 'Content Recovery', 'Frontend'],
   },
