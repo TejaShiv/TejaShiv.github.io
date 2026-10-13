@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" sizes="180x180" href="favicon.png"><link rel="shortcut icon" type="image/png" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tejas Shivaprasad, ML and Security Engineering</title>
+<meta name="description" content="Cybersecurity engineer building detection systems and cloud security tooling, with GRC work on NIST, FedRAMP and SOC 2. MS Cybersecurity, Northeastern University.">
+<link rel="canonical" href="https://TejaShiv.github.io/">
+
+<!-- Link preview cards (LinkedIn, Slack, iMessage, Twitter/X) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tejas Shivaprasad">
+<meta property="og:url" content="https://TejaShiv.github.io/">
+<meta property="og:title" content="Tejas Shivaprasad, ML and Security Engineering">
+<meta property="og:description" content="Cybersecurity engineer building detection systems and cloud security tooling, with GRC work on NIST, FedRAMP and SOC 2. MS Cybersecurity, Northeastern University.">
+<meta property="og:image" content="https://TejaShiv.github.io/social-card-v3.jpg">
+<meta property="og:image:width" content="2400">
+<meta property="og:image:height" content="1260">
+<meta property="og:image:alt" content="Tejas Shivaprasad, ML and Security Engineering, TejaShiv.github.io">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tejas Shivaprasad, ML and Security Engineering">
+<meta name="twitter:description" content="Cybersecurity engineer building detection systems and cloud security tooling, with GRC work on NIST, FedRAMP and SOC 2. MS Cybersecurity, Northeastern University.">
+<meta name="twitter:image" content="https://TejaShiv.github.io/social-card-v3.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=optional" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="intro-overlay" id="introOverlay" aria-hidden="true">
+  <div class="intro-box">
+    <div class="intro-lines" id="introLines"></div>
+    <div class="intro-skip">press any key, click, or scroll to skip</div>
+  </div>
+</div>
+
+<div class="grain"></div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="#top" class="mark">TS<span class="mark-dot">.</span></a>
+    <nav class="topnav" id="topnav">
+      <a href="#about" data-section="about">About</a>
+      <a href="#projects" data-section="projects">Projects</a>
+      <a href="#experience" data-section="experience">Experience</a>
+      <a href="#stack" data-section="stack">Stack</a>
+      <a href="#contact" data-section="contact">Contact</a><a href="portfolio/" class="nav-site">Portfolio</a><a href="learntej/" class="nav-site">LearnTej</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="top" class="hero">
+    <div class="hero-visual-zone">
+      <canvas id="netCanvas" aria-hidden="true"></canvas>
+      <div class="hero-fade"></div>
+      <div class="hero-grid">
+        <div class="hero-inner">
+          <p class="eyebrow hero-stage" id="heroEyebrow">BUILD LOG / IN PROGRESS</p>
+          <h1 class="hero-name"><span id="heroNameType"></span><span class="hero-name-caret" id="heroNameCaret">&#9612;</span></h1>
+          <p class="hero-role hero-stage" id="heroRole">Machine learning engineer. I build retrieval systems and autonomous agents, then measure them hard enough to say when the clever part did not earn its place.</p>
+          <div class="hero-cta hero-stage" id="heroCta">
+            <a href="#projects" class="btn btn-primary">See the work</a>
+            <a href="https://github.com/TejaShiv" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+            <a href="https://www.linkedin.com/in/tejas-shivaprasad-a216a427a" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+          </div>
+      <div class="site-links">
+        <a class="site-link" href="portfolio/"><b>Portfolio</b> &middot; visual case index &#8599;</a>
+        <a class="site-link" href="learntej/"><b>LearnTej</b> &middot; free generative AI curriculum &#8599;</a>
+      </div>
+
+        </div>
+
+      <div class="laptop-showcase hero-stage" id="heroLaptop">
+        <div class="showcase-callout">
+          <span id="speechText"></span><span class="caret">&#9612;</span>
+        </div>
+        <button class="laptop" id="avatarBtn" aria-label="Replay greeting">
+          <span class="contact-pill">Contact me &rarr;</span>
+          <div class="laptop-screen">
+            <div class="screen-glow"></div>
+            <video
+              class="avatar-video"
+              id="avatarVideo"
+              src="avatar.mp4"
+              poster="avatar-poster.jpg"
+              muted
+              playsinline
+              preload="auto"
+            ></video>
+          </div>
+          <div class="laptop-base"><span class="laptop-notch"></span></div>
+        </button>
+      </div>
+      </div>
+    </div>
+
+    <div class="ticker-wrap hero-stage" id="heroTicker" role="img" aria-label="Scrolling feed of anonymized detection log lines from Tejas's projects">
+      <div class="ticker-label"><span class="dot"></span> LIVE FEED / SIGNAL LOG</div>
+      <div class="ticker-track">
+        <div class="ticker-group" id="tickerA"></div>
+        <div class="ticker-group" id="tickerB" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <div class="terminal hero-stage" id="terminal">
+      <div class="terminal-bar">
+        <span class="tdot td-red"></span><span class="tdot td-yellow"></span><span class="tdot td-green"></span>
+        <span class="terminal-title">tejas@portfolio: zsh</span>
+      </div>
+      <div class="terminal-body" id="terminalBody">
+        <div class="tline">Type <span class="thl">help</span> to see what this thing can do.</div>
+      </div>
+      <div class="terminal-input-row">
+        <span class="prompt">tejas@portfolio:~$</span>
+        <input type="text" id="terminalInput" class="terminal-input" autocomplete="off" spellcheck="false" aria-label="Terminal command input">
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-inner">
+      <p class="eyebrow">ABOUT</p>
+      <div class="about-grid">
+        <div class="about-lead">
+          <p>I'm an MS Computer Science candidate at Northeastern University's Khoury College, graduating May 2027. Most of my work is retrieval and agents, with a steady side of security engineering. I like problems where the obvious answer turns out to be wrong once you actually measure it, which is how most of the findings in this log happened.</p>
+          <p>Before this I led five intern teams at Nuevera Infotech shipping an AI chatbot to a live client, and ran a 500 member student cybersecurity forum for three years. My projects usually run from raw data to a benchmark that says whether the design choice was worth it.</p>
+        </div>
+        <div class="about-facts">
+          <div class="fact">
+            <span class="fact-label">Based</span>
+            <span class="fact-value">Boston, MA</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label">Focus</span>
+            <span class="fact-value">Retrieval, agentic AI, detection, benchmarking</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label">Currently</span>
+            <span class="fact-value">MS Computer Science, Northeastern</span>
+          </div>
+          <div class="fact">
+            <span class="fact-label">Reading</span>
+            <span class="fact-value">BM25, embeddings, cross-encoders</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <p class="eyebrow">PROJECT LOG</p>
+      <h2 class="section-title" id="projectsTitle">Nine builds, from hybrid retrieval to autonomous agents</h2>
+      <p class="filter-hint">Filter by tag, or click a case for the full write-up.</p>
+      <div class="filter-bar" id="filterBar"></div>
+      <div class="case-grid" id="caseGrid"></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="section-inner">
+      <p class="eyebrow">EXPERIENCE</p>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack" class="section">
+    <div class="section-inner">
+      <p class="eyebrow">STACK</p>
+      <h2 class="section-title">Tools I reach for</h2>
+      <div class="stack-grid" id="stackGrid"></div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="section-inner">
+      <p class="eyebrow">EDUCATION</p>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <span class="edu-dates">2025 to 2027</span>
+          <h3>MS, Cybersecurity</h3>
+          <p>Northeastern University, Khoury College of Computer Sciences &middot; Boston, MA6</p>
+        </div>
+        <div class="edu-card">
+          <span class="edu-dates">2021 to 2025</span>
+          <h3>BTech, Computer Science and Engineering</h3>
+          <p>Global Academy of Technology, Bengaluru</p>
+        </div>
+      </div>
+      <div class="cert-row">
+        <a class="tag" href="https://www.coursera.org/account/accomplishments/professional-cert/NJ06LAXOT3R4" target="_blank" rel="noopener">IEEE INDIACom 2024, first author</a>
+        <span class="tag">SecureTech Forum, President 2022 to 2025</span>
+        <a class="tag" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/E9pA6qsdbeyEkp3ti_9PBTqmSxAf6zZTseP_4yHEByFJwhmmE2ekD_1752751473837_completion_certificate.pdf" target="_blank" rel="noopener">Nuevera Infotech, AI Intern Head</a>
+        <a class="tag" href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_4yHEByFJwhmmE2ekD_1752754071792_completion_certificate.pdf" target="_blank" rel="noopener">CPR, First Aid and AED certified</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="section-inner">
+      <p class="eyebrow">CONTACT</p>
+      <h2 class="section-title">Open to spring and summer 2027 roles, and summer new grad openings</h2>
+      <p class="contact-copy">Machine learning engineering, retrieval and search, applied AI, backend, and security engineering. If there's a fit, I'd like to hear about it.</p>
+      <div class="contact-links">
+        <a href="mailto:shivaprasad.t@northeastern.edu" class="btn btn-primary">Email me</a>
+        <a href="tel:+16177082809" class="btn btn-ghost">+1 (617) 708-2809</a>
+        <a href="https://www.linkedin.com/in/tejas-shivaprasad-a216a427a" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+        <a href="https://github.com/TejaShiv" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="modal-overlay" id="modalOverlay" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <span class="case-id" id="modalId"></span>
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+    <div class="case-tags" id="modalTags"></div>
+    <a href="#" target="_blank" rel="noopener" class="btn btn-primary" id="modalLink">View repository</a>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>&copy; 2026 Tejas Shivaprasad</span>
+    <span class="footer-note">Built with vanilla HTML/CSS/JS, hosted on GitHub Pages</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
