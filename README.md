@@ -32,8 +32,3 @@ drop it into the root site the way the workflow does:
     cd ../site && python3 -m http.server 8080
 
 `site/portfolio/` is gitignored, so that copy is local only.
-
-## Credits
-
-Site design licensed from Ronan Kongala. Content, project write-ups and
-the LearnTej curriculum are my own.
