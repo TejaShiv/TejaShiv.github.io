@@ -377,7 +377,7 @@ function initReveal() {
 
 // ===== Greeter =====
 
-const greeting = `Nine cases in the log. Hybrid retrieval, an agent that patches its own test failures, and sixteen million packets that turned out to be an I/O problem. Pick one.`;
+const greeting = `Hybrid retrieval of docs, an agent that patches its own test failures, and an I/O problem. Pick any and go down the rabbit hole.`;
 
 let typeSpeechToken = 0;
 
